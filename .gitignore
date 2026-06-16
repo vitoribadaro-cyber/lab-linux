@@ -1,0 +1,13 @@
+# Logs
+*.log
+
+# Arquivos de backup
+*.save
+*.bak
+
+# Cache Python
+__pycache__/
+
+# Arquivos temporários
+*.tmp
+*.swp
