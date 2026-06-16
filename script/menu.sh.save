@@ -1,0 +1,11 @@
+echo "====================="
+echo "     MENU VITOR      "
+echo "====================="
+echo
+
+echo "1 - Mostrar nome"
+echo "2 - Mostrar profissao"
+echo "3 - Mostrar cidade"
+echo "4 - sair"
+
+if [
