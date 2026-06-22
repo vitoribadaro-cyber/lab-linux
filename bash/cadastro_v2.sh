@@ -10,6 +10,7 @@ profissao=""
 while true
 do
 
+echo
 echo " 1 - Cadastra usuário"
 echo " 2 - Mostrar cadastro"
 echo " 3 - Apagar cadastro"
@@ -22,12 +23,14 @@ echo
 case $escolha in
 
 1)
+	echo "======================="
 	echo -n "Nome: "$nome
 	read nome
 	echo -n "Idade: "$idade
 	read idade
 	echo -n "Profissão: "$profissao
 	read profissao
+	echo "======================="
 	;;
 2)
 	if [  -z "$nome" ]
