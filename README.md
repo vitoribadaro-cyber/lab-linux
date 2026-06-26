@@ -1,8 +1,5 @@
 🐧 Laboratório Linux
 
-Laboratório pessoal onde documento minha evolução em Linux, Bash Script, Infraestrutura, Redes e Segurança Cibernética por meio de projetos práticos desenvolvidos durante meus estudos.
-
-
 Repositório dedicado aos meus estudos práticos de Linux, Bash Script, Redes, Git/GitHub e Segurança Cibernética.
 
 ---
