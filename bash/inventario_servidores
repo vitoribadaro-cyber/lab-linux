@@ -1,0 +1,57 @@
+#!/bin/bash
+
+echo "==========================="
+echo "   INVENTARIO SERVIDORES   "
+echo "==========================="
+echo
+
+servidores=(" 1-Servidor-Web" "2-Servidor-Banco" "3-Servidores-DNS" "4-Servidor-Backup")
+
+
+lista_sistemas(){
+for servidor in ${servidores[@]}
+do
+	echo $servidor
+	echo
+done
+}
+
+testar_conexao(){
+	echo "Verificando conexão...."
+	ping -c 4 google.com
+}
+
+quantidade_servidores(){
+	echo "${#servidores[@]}"
+	echo
+}
+
+while true
+do
+	echo " 1 - Lista Servidores"
+	echo " 2 - Testar conexão de todos"
+	echo " 3 - Mostrar quantidade de servidores"
+	echo " 4 - Sair"
+	echo
+	echo -n "Escolha "
+	read escolha
+	echo
+
+case $escolha in
+
+1)
+	lista_sistemas
+	;;
+2)
+	testar_conexao
+	;;
+3)
+	quantidade_servidores
+	;;
+4)
+	echo "Encerrando sistema..."
+	break
+
+	;;
+esac
+done
