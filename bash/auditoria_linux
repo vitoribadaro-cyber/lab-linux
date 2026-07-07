@@ -1,0 +1,75 @@
+#!/bin/bash
+
+echo '=============================='
+echo '        AUDITORIA LINUX       '
+echo '=============================='
+echo
+
+informacoes_sistema(){
+}
+
+processos_execucao(){
+}
+
+usuarios_logados(){
+}
+
+espaco_disco(){
+}
+
+memoria_ram(){
+}
+
+salvar_relatorio(){
+}
+
+mostrar_relatorio(){
+}
+
+while true
+do
+
+echo
+echo '1 - Informações do Sistema'
+echo '2 - Processos em Execução'
+echo '3 - Usuarios Logados'
+echo '4 - Espaço em Disco'
+echo '5 - Memoria RAM'
+echo '6 - Salvar Relatório'
+echo '7 - Mostrar Relatório'
+echo '8 - Sair'
+echo
+echo -n 'Escolha: '
+read escolha
+echo
+
+case $escolha in
+
+1)
+	informacoes_sistema
+	;;
+2)
+	processos_execucao
+	;;
+3)
+	usuarios_logados
+	;;
+4)
+	espaco_disco
+	;;
+5)
+	memoria_ram
+	;;
+6)
+	salvar_relatorio
+	;;
+7)
+	mostrar_relatorio
+	;;
+8)
+	echo 'Encerrando sistema...'
+	break
+	;;
+esac
+done
+
