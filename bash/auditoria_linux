@@ -4,47 +4,64 @@ echo '=============================='
 echo '        AUDITORIA LINUX       '
 echo '=============================='
 echo
-
-informacoes_sistema(){
+informacoes_sistema() {
+	host=$(hostname)
+	sistema=$(uname -o)
+	kerne=$(uname -r)
+	data=$(date '+%Y-%m-%d')
+	hora=$(date '+%H:%M:%S')
+	uptime=$(uptime -p)
+echo '===================================================='
+echo "Hostname:.................. $host"
+echo "Sistema operacional:......... $sistema"
+echo "Kernel:..................... $kerne"
+echo "Data:....................... $data"
+echo "Hora:....................... $hora"
+echo "Uptime:..................... $uptime"
+echo '===================================================='
 }
 
 processos_execucao(){
+	:
 }
 
 usuarios_logados(){
+	:
 }
 
 espaco_disco(){
+	:
 }
 
 memoria_ram(){
+	:
 }
 
 salvar_relatorio(){
+	:
 }
 
 mostrar_relatorio(){
+	:
 }
 
 while true
 do
+	echo
+	echo '1 - Informações do Sistema'
+	echo '2 - Processos em Execução'
+	echo '3 - Usuários Logados'
+	echo '4 - Espaço em Disco'
+	echo '5 - Memória RAM'
+	echo '6 - Salvar Relatório'
+	echo '7 - Mostrar Relatório'
+	echo '8 - Sair'
+	echo
+	echo -n 'Escolha: '
+	read escolha
+	echo
 
-echo
-echo '1 - Informações do Sistema'
-echo '2 - Processos em Execução'
-echo '3 - Usuarios Logados'
-echo '4 - Espaço em Disco'
-echo '5 - Memoria RAM'
-echo '6 - Salvar Relatório'
-echo '7 - Mostrar Relatório'
-echo '8 - Sair'
-echo
-echo -n 'Escolha: '
-read escolha
-echo
-
-case $escolha in
-
+	case $escolha in
 1)
 	informacoes_sistema
 	;;
@@ -70,6 +87,5 @@ case $escolha in
 	echo 'Encerrando sistema...'
 	break
 	;;
-esac
-done
-
+	esac
+	done
