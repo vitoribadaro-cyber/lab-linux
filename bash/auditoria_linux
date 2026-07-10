@@ -22,11 +22,27 @@ echo '===================================================='
 }
 
 processos_execucao(){
-	:
+
+echo '===================================================='
+echo "             PROCESSOS EM EXECUÇÃO"
+echo '===================================================='
+	quanridade_processos=$(ps -e --no-headers | wc -l)
+	listar_processos=$(ps -eo pid:8,user:8,%cpu:8,%mem:8,comm --sort=-%cpu | head -n 6)
+echo
+echo "Quantidade de processos em execução: $quanridade_processos"
+echo
+echo "   TOP 5 PROCESSOS POR CPU"
+echo
+echo "$listar_processos"
 }
 
 usuarios_logados(){
-	:
+
+echo '===================================================='
+echo "             USUÁRIOS LOGADOS"
+echo '===================================================='
+	
+
 }
 
 espaco_disco(){
