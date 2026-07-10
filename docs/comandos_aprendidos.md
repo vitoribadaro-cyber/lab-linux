@@ -50,9 +50,8 @@
 
 ## EXTENÇÕES ========================================
 
-## ShellCheck ⭐⭐⭐⭐⭐ (Obrigatória)
-## Essa é a extensão que praticamente todo mundo que trabalha com Bash usa.
-## Ela faz análise em tempo real do seu script
+## ShellCheck ⭐⭐⭐⭐⭐ 
+## Ela faz análise em tempo real do script
 
 ## Bash IDE (by mads-hartmann)
 ## Ela oferece:
@@ -71,10 +70,10 @@
 ## navegação pelo histórico.
 
 ## rror Lens ⭐⭐⭐⭐⭐
-## Ela pega os erros e mostra na própria linha, sem você precisar abrir a aba de problemas.
-## ❌ Erro de sintaxe
-## ⚠️ Aviso
-## 💡 Sugestão
+## Ela pega os erros e mostra na própria linha, sem precisar abrir a aba de problemas.
+##  Erro de sintaxe
+##  Aviso
+##  Sugestão
 
 ## COMANDOS ## ======================================
 
