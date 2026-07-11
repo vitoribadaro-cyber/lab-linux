@@ -51,7 +51,14 @@ w
 }
 
 espaco_disco(){
-	:
+
+echo '==========================================='
+echo "             ESPAÇO EM DISCO"
+echo '==========================================='
+echo
+# Exibe apenas a partição principal (/)
+df -h /
+echo 
 }
 
 memoria_ram(){
