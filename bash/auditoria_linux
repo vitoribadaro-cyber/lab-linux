@@ -23,13 +23,13 @@ echo '===================================================='
 
 processos_execucao(){
 
-echo '===================================================='
+echo '============================================'
 echo "             PROCESSOS EM EXECUÇÃO"
-echo '===================================================='
-	quanridade_processos=$(ps -e --no-headers | wc -l)
+echo '============================================'
+	quantidade_processos=$(ps -e --no-headers | wc -l)
 	listar_processos=$(ps -eo pid:8,user:8,%cpu:8,%mem:8,comm --sort=-%cpu | head -n 6)
 echo
-echo "Quantidade de processos em execução: $quanridade_processos"
+echo "Quantidade de processos em execução: $quantidade_processos"
 echo
 echo "   TOP 5 PROCESSOS POR CPU"
 echo
@@ -38,11 +38,16 @@ echo "$listar_processos"
 
 usuarios_logados(){
 
-echo '===================================================='
+echo '==========================================='
 echo "             USUÁRIOS LOGADOS"
-echo '===================================================='
-	
-
+echo '==========================================='
+echo
+	# TODO: Ajustar a contagem de usuários após estudar
+	# processamento de texto (grep, awk, sed ou cut).
+	quantidade_usuarios=$(w | wc -l)
+echo "Sessões ativas:"
+echo
+w
 }
 
 espaco_disco(){
