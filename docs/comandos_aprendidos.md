@@ -116,3 +116,14 @@
 ## ps -eo pid:8,user:15,%cpu:8,%mem:8,comm
 
 
+## 3.2 - quantidade de usuários: w | wc -l
+
+## 3.1 - quem está logado: w ou who
+ 
+## quantidade_usuarios=$( who | wc -l)
+
+## w = isolado ja chama a propria lista 
+
+## O comando df -h (Disk Free)
+## A opção -h significa human-readable (legível para humanos)
+## df -h / mostra apenas o principal
