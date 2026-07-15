@@ -1,4 +1,11 @@
 #!/bin/bash
+# ============================================
+# Projeto: Auditoria Linux
+# Autor: Vitor Moisés
+# Objetivo:
+# Ferramenta para consulta rápida de
+# informações do sistema Linux.
+# ============================================
 
 echo '=============================='
 echo '        AUDITORIA LINUX       '
@@ -12,6 +19,8 @@ informacoes_sistema() {
 	hora=$(date '+%H:%M:%S')
 	uptime=$(uptime -p)
 echo '===================================================='
+echo "             INFORMAÇÕES DO SISTEMA"
+echo '===================================================='
 echo "Hostname:.................. $host"
 echo "Sistema operacional:......... $sistema"
 echo "Kernel:..................... $kerne"
@@ -19,16 +28,15 @@ echo "Data:....................... $data"
 echo "Hora:....................... $hora"
 echo "Uptime:..................... $uptime"
 echo '===================================================='
+echo
 }
 
 processos_execucao(){
-
 echo '============================================'
 echo "             PROCESSOS EM EXECUÇÃO"
 echo '============================================'
 	quantidade_processos=$(ps -e --no-headers | wc -l)
 	listar_processos=$(ps -eo pid:8,user:8,%cpu:8,%mem:8,comm --sort=-%cpu | head -n 6)
-echo
 echo "Quantidade de processos em execução: $quantidade_processos"
 echo
 echo "   TOP 5 PROCESSOS POR CPU"
@@ -37,11 +45,9 @@ echo "$listar_processos"
 }
 
 usuarios_logados(){
-
 echo '==========================================='
 echo "             USUÁRIOS LOGADOS"
 echo '==========================================='
-echo
 	# TODO: Ajustar a contagem de usuários após estudar
 	# processamento de texto (grep, awk, sed ou cut).
 	quantidade_usuarios=$(w | wc -l)
@@ -51,26 +57,31 @@ w
 }
 
 espaco_disco(){
-
 echo '==========================================='
 echo "             ESPAÇO EM DISCO"
 echo '==========================================='
-echo
 # Exibe apenas a partição principal (/)
 df -h /
-echo 
 }
 
 memoria_ram(){
-	:
-}
+echo '==========================================='
+echo "             MEMÓRIA RAM"
+echo '==========================================='
+free -h
 
-salvar_relatorio(){
-	:
 }
 
 mostrar_relatorio(){
-	:
+echo '==========================================='
+echo "             RELATÓRIO DE GERAL"
+echo '==========================================='
+informacoes_sistema
+processos_execucao
+usuarios_logados
+espaco_disco
+memoria_ram
+
 }
 
 while true
@@ -81,9 +92,8 @@ do
 	echo '3 - Usuários Logados'
 	echo '4 - Espaço em Disco'
 	echo '5 - Memória RAM'
-	echo '6 - Salvar Relatório'
-	echo '7 - Mostrar Relatório'
-	echo '8 - Sair'
+	echo '6 - Mostrar Relatório'
+	echo '7 - Sair'
 	echo
 	echo -n 'Escolha: '
 	read escolha
@@ -106,12 +116,9 @@ do
 	memoria_ram
 	;;
 6)
-	salvar_relatorio
-	;;
-7)
 	mostrar_relatorio
 	;;
-8)
+7)
 	echo 'Encerrando sistema...'
 	break
 	;;
