@@ -127,3 +127,4 @@
 ## O comando df -h (Disk Free)
 ## A opção -h significa human-readable (legível para humanos)
 ## df -h / mostra apenas o principal
+## comando free -h (mostra as informações da memoria RAM de forma legivel)
