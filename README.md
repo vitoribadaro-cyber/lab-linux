@@ -1,116 +1,72 @@
-## 🐧 Laboratório Linux
+## 🐧 Linux Lab
 
-Repositório dedicado aos meus estudos práticos de **Linux, Bash Script, Redes, Git/GitHub e Segurança Cibernética**.
+Bem-vindo ao meu laboratório de estudos em Linux.
+
+Este repositório reúne projetos, exercícios e anotações desenvolvidos durante minha jornada de aprendizado em Linux, Bash Script, Redes de Computadores e Cyber Security.
+
+O objetivo deste laboratório é registrar minha evolução prática, aplicando conceitos em projetos reais e documentando todo o processo de aprendizagem.
+
+---
+
+## 📂 Estrutura do Repositório
+
+```text
+lab-linux/
+│
+├── bash/          # Scripts e projetos em Bash
+├── docs/          # Documentação e imagens
+├── redes/         # Estudos de Redes
+├── seguranca/     # Estudos de Segurança
+└── README.md
+```
+
+---
+
+# 🚀 Projetos
+
+## 🐧 Auditoria Linux
+
+Ferramenta desenvolvida em Bash Script para consulta rápida de informações do sistema Linux.
+
+### Funcionalidades
+
+- Informações do Sistema
+- Processos em Execução
+- Usuários Logados
+- Espaço em Disco
+- Memória RAM
+- Relatório Geral
+
+📄 Documentação do projeto:
+
+➡️ **bash/README.md**
+
+---
+
+## 📚 Tecnologias
+
+- Linux
+- Bash Script
+- Git
+- GitHub
+- VS Code
 
 ---
 
 ## 🎯 Objetivo
 
-Este laboratório foi criado para documentar minha evolução na área de **Infraestrutura, Linux e Segurança Cibernética** por meio de exercícios, scripts e projetos desenvolvidos durante meus estudos.
+Este repositório representa minha jornada de aprendizado na área de Infraestrutura, Linux e Cyber Security.
 
-O objetivo é registrar minha evolução prática, aplicando conceitos aprendidos em pequenos projetos, automações e desafios utilizando o terminal Linux.
-
----
-
-## 📚 Áreas de Estudo
-
-* Linux
-* Bash Script
-* Redes de Computadores
-* Segurança Cibernética
-* Automação
-* Git e GitHub
+Todo o conteúdo é desenvolvido de forma prática, buscando evoluir continuamente através da criação de projetos.
 
 ---
 
-## 🚀 Projetos Desenvolvidos
+## 👨‍💻 Autor
 
-### 📋 Sistema de Cadastro V1
+**Vitor Moisés**
 
-* Cadastro de usuário utilizando variáveis.
-* Estruturas condicionais (`if` e `case`).
-* Menu interativo.
+GitHub:
+https://github.com/vitoribadaro-cyber
 
-### 💾 Cadastro Persistente V1
-
-* Persistência de dados em arquivo `.txt`.
-* Leitura de informações utilizando `cat`.
-* Exclusão de cadastro utilizando `rm`.
-* Verificação de existência de arquivo com `if [ -f ]`.
-
-### 🖥️ Sistema de Monitoramento V1
-
-* Exibe informações do sistema.
-* Teste de conectividade utilizando `ping`.
-* Consulta de espaço em disco (`df -h`).
-* Consulta de memória RAM (`free -h`).
-* Geração de relatório em arquivo texto.
-* Leitura do relatório salvo.
-
-### 📂 Menus Interativos
-
-Durante os estudos foram desenvolvidos diversos menus utilizando:
-
-* `while`
-* `case`
-* funções
-* variáveis
-* comandos administrativos do Linux
-
----
-
-## 📈 Evolução dos Estudos
-
-## ✅ Já estudado
-
-* Diretórios Linux
-* Terminal Bash
-* Permissões (`chmod`)
-* Variáveis
-* Estruturas condicionais (`if` e `case`)
-* Loops (`while`)
-* Funções em Bash
-* Manipulação de arquivos
-* Persistência de dados
-* Git
-* GitHub
-* SSH
-* Chaves pública e privada
-
-## 📖 Atualmente estudando
-
-* Automação com Bash
-* Monitoramento de servidores
-* Organização de projetos
-* Boas práticas em Shell Script
-
----
-
- ## 🛠️ Tecnologias e Ferramentas Utilizadas
-
-* Ubuntu Server
-* Bash
-* Git
-* GitHub
-* SSH
-* Nano
-* Terminal Linux
-
----
-
-## 📂 Estrutura
-
-```text
-laboratorio/
-├── bash/
-├── docs/
-├── logs/
-├── redes/
-└── seguranca/
-```
-
----
-
-# 🎯 Objetivo Final
-
-Este repositório evolui continuamente conforme avanço nos estudos. Cada novo script representa um novo conceito aprendido e aplicado na prática, formando meu portfólio de Infraestrutura, Linux e Segurança Cibernética.
+LinkedIn:
+https://www.linkedin.com/in/vitor-badar%C3%B3-0020b1203/
